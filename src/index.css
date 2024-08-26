@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-white font-semibold py-3 px-7 rounded-md hover:scale-110 duration-300 hover:opacity-50;
+  }
+}
+
+@layer components {
+  .drop-shadow {
+    filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0, 2));
+  }
+}
