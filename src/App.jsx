@@ -4,6 +4,25 @@ import Hero from "./components/Hero";
 import BgImage from "./assets/bg.png";
 import Equipment from "./components/Equipments/Equipment";
 import Banner from "./components/Banner/Banner";
+import Img1 from "./assets/2.png";
+import Img2 from "./assets/3.png";
+
+// Define Banner Data
+const BannerData = {
+  image: Img1,
+  title: "The Importance of Taking Care of Yourself",
+  subtitle:
+    "It is crucial to focus on your health and well-being. Learn about the best practices to keep yourself in good shape.",
+  link: "#",
+};
+
+const Banner2Data = {
+  image: Img2,
+  title: "Fitness and Wellness",
+  subtitle:
+    "Explore the ways fitness and wellness can improve your physical and mental health. Join our programs to stay fit.",
+  link: "#",
+};
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -15,13 +34,14 @@ const bgStyle = {
 
 const App = () => {
   return (
-    <div className=" overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <div style={bgStyle}>
         <Nav />
         <Hero />
       </div>
       <Equipment />
-      <Banner />
+      <Banner {...BannerData} />
+      <Banner {...Banner2Data} />
     </div>
   );
 };
