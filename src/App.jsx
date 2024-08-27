@@ -6,6 +6,7 @@ import Equipment from "./components/Equipments/Equipment";
 import Banner from "./components/Banner/Banner";
 import Img1 from "./assets/2.png";
 import Img2 from "./assets/3.png";
+import TabComp from "./components/Tab/TabComp";
 
 // Define Banner Data
 const BannerData = {
@@ -41,6 +42,7 @@ const App = () => {
       </div>
       <Equipment />
       <Banner {...BannerData} />
+      <TabComp />
       <Banner {...Banner2Data} />
     </div>
   );
